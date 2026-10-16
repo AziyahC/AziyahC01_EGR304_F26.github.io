@@ -26,7 +26,7 @@
 
     
       
-        <title>Component Selection Example - EGR 304 Aziyah Castellanoz Data Sheet</title>
+        <title>Component Selection for Design - EGR 304 Aziyah Castellanoz Data Sheet</title>
       
     
     
@@ -89,11 +89,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#examples" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -125,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Selection Example
+              Component Selection for Design
             
           </span>
         </div>
@@ -513,76 +508,15 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Component Selection Example
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection for Design
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -808,47 +742,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -870,15 +763,13 @@
   
 
 
-  <h1>Component Selection Example</h1>
+  <h1>Component Selection for Design</h1>
 
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
 <p><strong>Tempature &amp; Humidity Sensing Transmission</strong></p>
 <table>
 <thead>
 <tr>
-<th><strong>Solution</strong></th>
+<th>**Component 1: Temperature &amp; Humidity Sensor **</th>
 <th><strong>Pros</strong></th>
 <th><strong>Cons</strong></th>
 </tr>
@@ -901,13 +792,37 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
+<p><strong>Choice:</strong> Option 1: 1188-SNS-DHT11-ND Sensor </p>
+<p><strong>Rationale:</strong> Since our design does not require precise readings and operates natively on a 5V rail, the DHT11 is the best choice. Not only is the component within budget constraints, it also only uses one GPIO pin leaving the remaining pins open for UART communication. </p>
+<table>
+<thead>
+<tr>
+<th>**Component 2: 5v Linear Voltage Regulator **</th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../L7805ABV-DG.jpg" data-desc-position="bottom"><img alt="" src="../L7805ABV-DG.jpg"></a><br>Option 1.<br> L7805ABV-DG<br>$1.53/each<br><a href="https://www.digikey.com/short/15pzw22v">link to product</a></td>
+<td>* High output accuracy<br>* Wide operating temperature <br>* Stable over a wide input voltage range</td>
+<td>* Gets hot too quickly <br>* Requires a minimum of 2v dropout voltage</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MC7805CTG.jpg" data-desc-position="bottom"><img alt="" src="../MC7805CTG.jpg"></a><br>* Option 2. <br>* MC7805CTGOS-ND<br>$1.01/each <br>* <a href="https://www.digikey.com/short/tq2pv7h9">Link to product</a></td>
+<td>* Low dropout voltage <br>* Built in heatsink <br> * High current capability</td>
+<td>* Poor power efficiency <br>* Maximum output current limited to 250 mA  <br>* Consumes a operating current of 5mA to 6.5mA</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MCP1700.jpg" data-desc-position="bottom"><img alt="" src="../MCP1700.jpg"></a><br>* Option 3. <br>*  MCP1700-5002E/TO-ND <br>* $0.50/each <br>* <a href="https://www.digikey.com/short/9zw8dnb0">Link to product</a></td>
+<td>*Extremely inexpensive  <br>* Very low operating current(µA) <br> * Built in circuit protection</td>
+<td>* Narrow input voltage margin <br>* Requires input/output filter capacitros for sabaility</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 1: L7805ABV-DG</p>
+<p><strong>Rationale:</strong> The L7805ABV-DG was selected due to its capability of sourcing a 1.5A max output current which will provide a safe current for our design and its built in circuit protection incase of a short circuit. It is also a standard stock component, even being used in some of the in class Lab, also providing thermal protection feature such as a heatsink to reduce heat with high voltage.</p>
+<p>| **Component 3: External Power Supply **      </p>
 <ol>
 <li>
 <p>XC1259TR-ND surface mount crystal</p>
