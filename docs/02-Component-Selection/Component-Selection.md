@@ -26,39 +26,14 @@ title: Component Selection for Design
 **Rationale:** The L7805ABV-DG was selected due to its capability of sourcing a 1.5A max output current which will provide a safe current for our design and its built in circuit protection incase of a short circuit. It is also a standard stock component, even being used in some of the in class Lab, also providing thermal protection feature such as a heatsink to reduce heat with high voltage.
 
 
-| **Component 3: External Power Supply **      
+| **Component 3: External Power Supply **  
+                                                         | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](PSAC05R2.jpg)<br>Option 1.<br>993-PSAC05R-050L6-R-ND<br>$5.56/each<br>[link to product](https://www.digikey.com/short/p8mf59r8)                 | \* high efficiency <br>\* Reliable output <br>\* Interchangeable AC plugs                                                | \* AC plugs sold separately<br>\* Limited to 5 watts |
+| ![](16-00078.jpg)<br>\* Option 2. <br>\* 839-16-00078-ND <br>\* $7.51/each <br>\* [Link to product](https://www.digikey.com/short/t1zb5h8q) | \* Wide input range <br>\* Standard output connector <br> \* High energy efficiecy | * Low power output <br>\* Low operating tempature                                                         |
+| ![](WSU120-0700.jpg)<br>\* Option 3. <br>\*  WSU120-0700 <br>\* $7.58/each <br>\* [Link to product](https://www.digikey.com/short/mtzfnvnt) | \*Clean and regulated output <br>\* Long cord length <br> \* Affordable | * Narrow operating temperature                                            |
 
+**Choice:** Option 3: WSU120-0700 AC/DC WALL MNT ADAPTER 12V 8.4W
 
+**Rationale:** The WSU120-0700 was chosen since it satisfies the regulator dropout requirements, for example our chosen voltage regulator requires a minimum of 7 volts which our 12V DC output satisfies. The 700 mA at 12v DC provides significant current headroom to pass the 25 percent current safety margin, it also has a integrated barrel plug that is compatible with the barrel jack on our PCB. 
 
-
-
-
-1. XC1259TR-ND surface mount crystal
-
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
-
-1. CTX936TR-ND surface mount oscillator
-
-    ![](image3.png)
-
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
