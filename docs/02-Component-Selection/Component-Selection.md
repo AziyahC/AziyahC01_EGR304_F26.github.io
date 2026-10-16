@@ -6,16 +6,15 @@ title: Component Selection Example
 
 ### Style 1
 
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
+**Tempature & Humidity Sensing Transmission**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
+| ![](image1.png)<br>Option 1.<br> 1188-SNS-DHT11-ND<br>$3.95/each<br>[link to product](https://www.digikey.com/short/f338bv47)                 | \* high humidity range<br>\* Only needs one GPIO pin <br>\* Compact for small project deisgn                                               | \* Lower accuracy<br>\* Maximum sampling rate 1HZ |
+| ![](image3.png)<br>\* Option 2. <br>\* CANADUINO 26085 <br>\* $2.39/each <br>\* [Link to product](https://www.digikey.com/short/wm7pmcbw) | \* Cheaper than other options <br>\* Wide voltage range <br> \* 16 bit output provides high resolution data | * Low relative humidity(RH) limit <br>\* lower quality DHT11                                                         |
+| ![](image3.png)<br>\* Option 3. <br>\*  1188-SNS-DHT22-ND <br>\* $7.30/each <br>\* [Link to product](https://www.digikey.com/short/mtzfnvnt) | \*High precision <br>\* Fast response time <br> \* Industry Stadard | * Expensive <br>\* Harder to hand solder  <br>\* Require external pull-up resistors                                                        |
+
+
 
 **Choice:** Option 2: CTX936TR-ND surface mount oscillator
 
