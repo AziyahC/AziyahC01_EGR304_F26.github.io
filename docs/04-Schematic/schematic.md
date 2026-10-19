@@ -7,7 +7,7 @@ title: Schematic
 This schematic is design to support .... (highlight functionally, power, and controller).
 
 
-![schematic](subsystem_designschematic.pdf){style width:"350" height:"300;"}
+![schematic](designschematic.pdf){style width:"350" height:"300;"}
 **Figure ##:** Showing a example schematic.
 
 
