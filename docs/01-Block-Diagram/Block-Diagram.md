@@ -29,4 +29,4 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ## Subsystem Block Diagram 
 Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![Individual Subsystem Block Diagram - Aziyah Castellanoz](updated block diagram.pdf)
+![Individual Subsystem Block Diagram - Aziyah Castellanoz](updatedblockdiagram.pdf)
