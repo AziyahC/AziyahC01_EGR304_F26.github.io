@@ -881,41 +881,26 @@ Things to mention are:</p>
 <p>This diagram documents how major integrated circuits, digital signal connection, and user interface peripherals connect to the PIC18F57Q43 Curiosity Nano microcontroller, as well as how data and digital signals pass to the main board thorough the team's 8-pin connector. </p>
 <hr>
 <h3 id="key-architectural-elements">Key Architectural Elements</h3>
-<ul>
-<li><strong>Power Sources and Voltage</strong></li>
-<li><strong>External Power Input:</strong> 12V DC wall adapter entering through a PCB barrel jack which is protected by a inline fuse.</li>
-<li><strong>Regulated Logic Rail(5V DC):</strong> L7805ABV-DG 1.5A linear regulator with input(0.33uf) and output(0.1uf) filtering capacitors.</li>
-<li>
-<p><strong>Ground</strong> Common system Earth Ground rail shared across all block and team interfaces.</p>
-</li>
-<li>
-<p><strong>Sensor Subsystem:</strong></p>
-</li>
-<li><strong>DHT11 Temperature and Humidity Sensor</strong> Single-bus digital environmental sensor operating on 5V with a 10k pull up resistor</li>
-<li>
-<p><strong>Op-Amp Buffer Stage:</strong> Using the MCP6004 the DHT11 will pass through the op-amp to prevent signal degradation and input loading.</p>
-</li>
-<li>
-<p><strong>User Interface and Debugging Indicators:</strong></p>
-</li>
-<li><strong>Pushbuttons:</strong> Active user input switches tied to RA4 and RA3 with 10k pull up resistors.</li>
-<li><strong>Debug Status LED:</strong> General purpose visual status indicator on pin RA0 with a 300 ohm current limiting resistor.</li>
-<li>
-<p><strong>Spare GPIO Expansion Header:</strong> 1x6 male header that has power, ground, and 4 unused GPIO pins for testing or probing.</p>
-</li>
-<li>
-<p><strong>Team Inter-Board Connections(8-pin Header):</strong></p>
-</li>
-<li><strong>Pin 1 ('DigitalSignal2'):</strong> Digital control line routed to PIC pin RA3.</li>
-<li><strong>Pin 2 ('DigitalSignal1'):</strong> Digital control line routed to PIC pin RA4.</li>
-<li><strong>Pin 3 ('UART_TX'):</strong> UART serial data output from PIC transmitting sensor data packets to main board.</li>
-<li><strong>Pin 4 ('UART_RX'):</strong> UART serial data input to PIC receiving commands from the main board. </li>
-<li><strong>Pin 5-7 ('DigitalSignal2'):</strong> Reserved pass-through lines for team expansion</li>
-<li><strong>Pin 8 ('Earth' Ground):</strong> Class stnadard common ground return line</li>
-</ul>
+<p><strong>Power Sources and Voltage</strong>
+ * <strong>External Power Input:</strong> 12V DC wall adapter entering through a PCB barrel jack which is protected by a inline fuse.
+ * <strong>Regulated Logic Rail(5V DC):</strong> L7805ABV-DG 1.5A linear regulator with input(0.33uf) and output(0.1uf) filtering capacitors.
+ * <strong>Ground</strong> Common system Earth Ground rail shared across all block and team interfaces.</p>
+<p><strong>Sensor Subsystem:</strong>
+ * <strong>DHT11 Temperature and Humidity Sensor</strong> Single-bus digital environmental sensor operating on 5V with a 10k pull up resistor
+ * <strong>Op-Amp Buffer Stage:</strong> Using the MCP6004 the DHT11 will pass through the op-amp to prevent signal degradation and input loading.</p>
+<p><strong>User Interface and Debugging Indicators:</strong>
+ * <strong>Pushbuttons:</strong> Active user input switches tied to RA4 and RA3 with 10k pull up resistors.
+ * <strong>Debug Status LED:</strong> General purpose visual status indicator on pin RA0 with a 300 ohm current limiting resistor.
+ * <strong>Spare GPIO Expansion Header:</strong> 1x6 male header that has power, ground, and 4 unused GPIO pins for testing or probing.</p>
+<p><strong>Team Inter-Board Connections(8-pin Header):</strong>
+* <strong>Pin 1 ('DigitalSignal2'):</strong> Digital control line routed to PIC pin RA3.
+* <strong>Pin 2 ('DigitalSignal1'):</strong> Digital control line routed to PIC pin RA4.
+* <strong>Pin 3 ('UART_TX'):</strong> UART serial data output from PIC transmitting sensor data packets to main board.
+* <strong>Pin 4 ('UART_RX'):</strong> UART serial data input to PIC receiving commands from the main board. 
+* <strong>Pin 5-7 ('DigitalSignal2'):</strong> Reserved pass-through lines for team expansion
+* <strong>Pin 8 ('Earth' Ground):</strong> Class stnadard common ground return line</p>
 <hr>
 <h2 id="subsystem-block-diagram">Subsystem Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../blockdia.jpg" data-desc-position="bottom"><img alt="Individual Subsystem Block Diagram - Aziyah Castellanoz" src="../blockdia.jpg"></a></p>
 
 
