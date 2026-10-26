@@ -48,4 +48,4 @@ This diagram documents how major integrated circuits, digital signal connection,
 ## Subsystem Block Diagram 
 Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![Individual Subsystem Block Diagram - Aziyah Castellanoz](updatedblockdiagram.pdf)
+![Individual Subsystem Block Diagram - Aziyah Castellanoz](blockdia.jpg)
