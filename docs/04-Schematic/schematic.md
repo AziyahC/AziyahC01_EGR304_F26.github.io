@@ -13,6 +13,3 @@ Power is supplied by an external 12v DC wall adapter through a barrel jack and r
 **Figure ##:** Showing a example schematic.
 
 
-## Resouces
-
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
