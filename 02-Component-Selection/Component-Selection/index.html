@@ -777,7 +777,7 @@
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SNS-DH11.jpg" data-desc-position="bottom"><img alt="" src="../SNS-DH11.jpg"></a><br>Option 1.<br> 1188-SNS-DHT11-ND<br>$3.95/each<br><a href="https://www.digikey.com/short/f338bv47">link to product</a></td>
-<td>* high humidity range<br>* Only needs one GPIO pin <br>* Compact for small project deisgn</td>
+<td>* high humidity range<br>* Only needs one GPIO pin <br>* Compact for small project design</td>
 <td>* Lower accuracy<br>* Maximum sampling rate 1HZ</td>
 </tr>
 <tr>
@@ -787,18 +787,18 @@
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DHT22.jpg" data-desc-position="bottom"><img alt="" src="../DHT22.jpg"></a><br>* Option 3. <br>*  1188-SNS-DHT22-ND <br>* $7.30/each <br>* <a href="https://www.digikey.com/short/mtzfnvnt">Link to product</a></td>
-<td>*High precision <br>* Fast response time <br> * Industry Stadard</td>
+<td>*High precision <br>* Fast response time <br> * Industry Standard</td>
 <td>* Expensive <br>* Harder to hand solder  <br>* Require external pull-up resistors</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MFG_1528_5183.png" data-desc-position="bottom"><img alt="" src="../MFG_1528_5183.png"></a><br>* Option 4. <br>*  1528-5183-ND <br>* $4.50/each <br>* <a href="https://www.digikey.com/short/5413wj20">Link to product</a></td>
-<td>*High precision <br>* Fast response time <br> * Industry Stadard</td>
-<td>* Expensive <br>* Harder to hand solder  <br>* Require external pull-up resistors</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MFG_1528_5183.png" data-desc-position="bottom"><img alt="" src="../MFG_1528_5183.png"></a><br>* Option 4. <br>* DHT20 - AHT20 <br>* $4.50/each <br>* <a href="https://www.digikey.com/short/5413wj20">Link to product</a></td>
+<td>* Fast response time with 8 seconds <br>* High temperature and humidity accuracy <br> * Wide voltage range from 2.2V to 5.0V</td>
+<td>* Requires 2 GPIO pins <br>* Requires bus pull up resistors and Decoupling capacitors <br>* Manuel soldering constraints</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 1: 1188-SNS-DHT11-ND Sensor </p>
-<p><strong>Rationale:</strong> Since our design does not require precise readings and operates natively on a 5V rail, the DHT11 is the best choice. Not only is the component within budget constraints, it also only uses one GPIO pin leaving the remaining pins open for UART communication. </p>
+<p><strong>Choice:</strong> Option 4: DHT20 - AHT20 PIN MODULE - I2C T</p>
+<p><strong>Rationale:</strong> The DHT20 temperature and humidity sensor created by Adafruit was selected to replace my initial selection of the DHT11 to fully comply with the EGR304 course guidelines while upgrading the overall system performance. The DHT20 comes as a standalone 4-pin through hole component that can be soldered directly onto our custom PCB boards as well transitions the subsystem communication to a standard I^2C which is more reliable and compatible with our PIC18F57Q43's hardware. Compared to the original DHT11, the DHT20 has a superior relative humidity and temperature accuracy and has a lower cost. </p>
 <table>
 <thead>
 <tr>
@@ -821,7 +821,7 @@
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MCP1700.jpg" data-desc-position="bottom"><img alt="" src="../MCP1700.jpg"></a><br>* Option 3. <br>*  MCP1700-5002E/TO-ND <br>* $0.50/each <br>* <a href="https://www.digikey.com/short/9zw8dnb0">Link to product</a></td>
 <td>*Extremely inexpensive  <br>* Very low operating current(µA) <br> * Built in circuit protection</td>
-<td>* Narrow input voltage margin <br>* Requires input/output filter capacitros for sabaility</td>
+<td>* Narrow input voltage margin <br>* Requires input/output filter capacitors for stability</td>
 </tr>
 </tbody>
 </table>
