@@ -9,6 +9,8 @@ title: Component Selection for Design
 | ![](SNS-DH11.jpg)<br>Option 1.<br> 1188-SNS-DHT11-ND<br>$3.95/each<br>[link to product](https://www.digikey.com/short/f338bv47)                 | \* high humidity range<br>\* Only needs one GPIO pin <br>\* Compact for small project deisgn                                               | \* Lower accuracy<br>\* Maximum sampling rate 1HZ |
 | ![](26085_DHT.jpg)<br>\* Option 2. <br>\* CANADUINO 26085 <br>\* $2.39/each <br>\* [Link to product](https://www.digikey.com/short/wm7pmcbw) | \* Cheaper than other options <br>\* Wide voltage range <br> \* 16 bit output provides high resolution data | * Low relative humidity(RH) limit <br>\* lower quality DHT11                                                         |
 | ![](DHT22.jpg)<br>\* Option 3. <br>\*  1188-SNS-DHT22-ND <br>\* $7.30/each <br>\* [Link to product](https://www.digikey.com/short/mtzfnvnt) | \*High precision <br>\* Fast response time <br> \* Industry Stadard | * Expensive <br>\* Harder to hand solder  <br>\* Require external pull-up resistors                                                        |
+| ![](MFG_1528_5183.png)<br>\* Option 4. <br>\*  1528-5183-ND <br>\* $4.50/each <br>\* [Link to product](https://www.digikey.com/short/5413wj20) | \*High precision <br>\* Fast response time <br> \* Industry Stadard | * Expensive <br>\* Harder to hand solder  <br>\* Require external pull-up resistors                                                        |
+
 
 **Choice:** Option 1: 1188-SNS-DHT11-ND Sensor 
 
