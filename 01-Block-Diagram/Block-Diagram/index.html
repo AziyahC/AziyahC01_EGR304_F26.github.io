@@ -875,8 +875,6 @@
 <p>** Team 207 | Aziyah Castellanoz<strong> 
 </strong>Subsystem:** Temperature &amp; Humidity Sensing Transmission</p>
 <h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:</p>
 <p>The purpose of this block diagram is to define the electrical design, signal flow, power distribution, and the board interface connections for the Temperature &amp; Humidity Sensing Transmission Subsystem. </p>
 <p>This diagram documents how major integrated circuits, digital signal connection, and user interface peripherals connect to the PIC18F57Q43 Curiosity Nano microcontroller, as well as how data and digital signals pass to the main board thorough the team's 8-pin connector. </p>
 <hr>
@@ -886,7 +884,7 @@ Things to mention are:</p>
  * <strong>Regulated Logic Rail(5V DC):</strong> L7805ABV-DG 1.5A linear regulator with input(0.33uf) and output(0.1uf) filtering capacitors.
  * <strong>Ground</strong> Common system Earth Ground rail shared across all block and team interfaces.</p>
 <p><strong>Sensor Subsystem:</strong>
- * <strong>DHT11 Temperature and Humidity Sensor</strong> Single-bus digital environmental sensor operating on 5V with a 10k pull up resistor
+ * <strong>DHT20 Temperature and Humidity Sensor</strong> Communicates with PIC18F57Q43 Curiosity Nano via a two wire I2C serial protocol. 
  * <strong>Op-Amp Buffer Stage:</strong> Using the MCP6004 the DHT11 will pass through the op-amp to prevent signal degradation and input loading.</p>
 <p><strong>User Interface and Debugging Indicators:</strong>
  * <strong>Pushbuttons:</strong> Active user input switches tied to RA4 and RA3 with 10k pull up resistors.
@@ -901,7 +899,7 @@ Things to mention are:</p>
 * <strong>Pin 8 ('Earth' Ground):</strong> Class stnadard common ground return line</p>
 <hr>
 <h2 id="subsystem-block-diagram">Subsystem Block Diagram</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../blockdia.jpg" data-desc-position="bottom"><img alt="Individual Subsystem Block Diagram - Aziyah Castellanoz" src="../blockdia.jpg"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../upblockdia.png" data-desc-position="bottom"><img alt="Individual Subsystem Block Diagram - Aziyah Castellanoz" src="../upblockdia.png"></a></p>
 
 
 
