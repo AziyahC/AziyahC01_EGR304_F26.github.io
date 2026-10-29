@@ -9,8 +9,6 @@ tags:
 
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
 
 The purpose of this block diagram is to define the electrical design, signal flow, power distribution, and the board interface connections for the Temperature & Humidity Sensing Transmission Subsystem. 
 
@@ -26,7 +24,7 @@ This diagram documents how major integrated circuits, digital signal connection,
  * **Ground** Common system Earth Ground rail shared across all block and team interfaces.
 
  **Sensor Subsystem:**
- * **DHT11 Temperature and Humidity Sensor** Single-bus digital environmental sensor operating on 5V with a 10k pull up resistor
+ * **DHT20 Temperature and Humidity Sensor** Communicates with PIC18F57Q43 Curiosity Nano via a two wire I2C serial protocol. 
  * **Op-Amp Buffer Stage:** Using the MCP6004 the DHT11 will pass through the op-amp to prevent signal degradation and input loading.
 
  **User Interface and Debugging Indicators:**
@@ -45,4 +43,4 @@ This diagram documents how major integrated circuits, digital signal connection,
 
 ## Subsystem Block Diagram 
 
-![Individual Subsystem Block Diagram - Aziyah Castellanoz](blockdia.jpg)
+![Individual Subsystem Block Diagram - Aziyah Castellanoz](upblockdia.png)
