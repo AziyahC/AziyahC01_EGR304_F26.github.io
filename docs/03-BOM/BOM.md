@@ -2,12 +2,7 @@
 ## Overview
 This Bill of Materials accounts for all physical components shown on the Subsystem Schematic DHT20 Schematic, including test points, status LEDs, socket headers, and debugging hardware.
 
-## Bill of Materials for Temperature/Humidity Sensing System 
-
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 | n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
+## Bill of Materials for Temperature/Humidity Sensing Subsystem 
 
 **1. Power Regulation & Protection** 
 
