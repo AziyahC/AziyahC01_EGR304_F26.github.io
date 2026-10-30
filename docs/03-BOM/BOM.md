@@ -54,4 +54,4 @@ PCB Miniature Test Point Loop Terminals | 6 | $0.27 | $1.62 | Keystone Electroni
 28-Pin 0.100" Header for Microcontroller | 2 | $0.50 | $1.00 | Same Sky (Formerly CUI Devices) | SSK02-FPH-254-A28 | [DigiKey](https://www.digikey.com/short/tnm288fh) | [Datasheet Link](https://www.sameskydevices.com/product/resource/ssk02-fph-254.pdf) | Microcontroller Mount |
 4-Pin 0.100" Header for DHT20 | 1 | $0.42 | $0.42 | Würth Elektronik | 61300411821 | [DigiKey](https://www.digikey.com/short/nmb70r0f) | [Datasheet Link](https://www.we-online.com/components/products/datasheet/61300411821.pdf) | Temperature & Humidity Sensor Mount
 
-### Total Subsystem Hardware Cost: **$25.43**
+### Total Subsystem Hardware Cost: **$25.23** for All Cost & **18.91** While using Peralta 109 Resources
