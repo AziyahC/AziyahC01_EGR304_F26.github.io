@@ -31,8 +31,8 @@ Sensor VDD 0.1 µF, 50V Bypass Capacitor | 1 | $0.15 | $0.15 | KEMET | C315C104K
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-Pin (2x4) Shrouded Ribbon Header | 1 | $0.95 | $0.95 | Adafruit Industries LLC | 4939 | [DigiKey](https://www.digikey.com/short/r3wnw082) | n/a | J2 | 
-8-Conductor Flat Ribbon Cable Assembly | 1 | $2.10 | $2.10 | Molex | 0151660081 | [DigiKey](https://www.digikey.com) | [Datasheet Link](https://www.molex.com) | Cable for J2 |
+8-Pin (2x4) Shrouded Ribbon Header | 1 | $0.28 | $0.28 | Adam Tech | BHR-08-VUA | [DigiKey](https://www.digikey.com/short/pnzv0rmd) | [Datasheet Link](https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf) | J2 | 
+8-Conductor Flat Ribbon Cable Assembly | 1 |  $0.95 | $0.95 | Adafruit Industries LLC | 4939 | [DigiKey](https://www.digikey.com/short/r3wnw082) | n/a | Cable for J2 |
 1x6 Male Expansion Header (0.079") | 1 | $0.29 | $0.29 | Adam Tech | 2PH1-11-UA | [DigiKey](https://www.digikey.com/short/brm0z7ff) | [Datasheet Link](https://app.adam-tech.com/products/download/data_sheet/200457/2ph1-xx-ua-data-sheet.pdf) | J3 |
 Red 9mm Through-Hole Debug LED | 1 | $0.66 | $0.66 | Kingbright | WP7113SURDK14V | PRLTA 109 | [Datasheet Link](https://www.kingbrightusa.com/images/catalog/SPEC/WP7113SURDK14V.pdf) | D1 |
 300 Ω, 1/4W Resistor (LED Current Limit) | 1 | $0.10 | $0.10 | KOA Speer Electronics, Inc. | CF1/2CT52R301J | PRLTA 109 | [Datasheet Link](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6165/2019_CF_Series.pdf) | R4 |
@@ -49,4 +49,4 @@ PCB Miniature Test Point Loop Terminals | 6 | $0.27 | $1.62 | Keystone Electroni
 28-Pin 0.100" Header for Microcontroller | 2 | $0.50 | $1.00 | Same Sky (Formerly CUI Devices) | SSK02-FPH-254-A28 | [DigiKey](https://www.digikey.com/short/tnm288fh) | [Datasheet Link](https://www.sameskydevices.com/product/resource/ssk02-fph-254.pdf) | Microcontroller Mount |
 4-Pin 0.100" Header for DHT20 | 1 | $0.42 | $0.42 | Würth Elektronik | 61300411821 | [DigiKey](https://www.digikey.com/short/nmb70r0f) | [Datasheet Link](https://www.we-online.com/components/products/datasheet/61300411821.pdf) | Temperature & Humidity Sensor Mount
 
-### Total Subsystem Hardware Cost: **$25.69** for All Cost & **18.91** While using Peralta 109 Resources
+### Total Subsystem Hardware Cost: **$23.71** for All Cost & **17.23** While using Peralta 109 Resources
