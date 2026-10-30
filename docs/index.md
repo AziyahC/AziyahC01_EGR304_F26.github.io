@@ -21,7 +21,7 @@ for<br>
 ### Project Summary
 
 * This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.]([https://embedded-systems-design.github.io/EGR304TeamTemplate/](https://asu-egr304-2026-f-207.github.io/TEAM207_EGR304-FALL_2026/))
+* Add context that ties into the link to your [team report.](https://asu-egr304-2026-f-207.github.io/TEAM207_EGR304-FALL_2026/)
 
 * [Component Selection](02-Component-Selection/Component-Selection.md)
 
