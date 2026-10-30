@@ -18,6 +18,7 @@ written context
 0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
 
 **1. Power Regulation & Protection** 
+
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----| 
 2.1mm x 5.5mm PCB DC Barrel Jack | 1 | $1.25 | $1.25 | CUI Devices | PJ-102AH | [DigiKey](https://www.digikey.com/en/products/detail/cui-devices/PJ-102AH/408448) | [Datasheet](https://www.cuidevices.com/product/resource/pj-102ah.pdf) | J1 |
@@ -28,6 +29,7 @@ written context
 12V DC 700mA AC/DC Wall Adapter | 1 | $7.58 | $7.58 | Triad Magnetics | WSU120-0700 | [DigiKey](https://www.digikey.com) | [Datasheet]([suspicious link removed]) | External (J1) 
 
 **2. Microcontroller Core & Environmental Sensing** 
+
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----| 
 PIC18F57Q43 Curiosity Nano Board | 1 | $0.00 | $0.00 | Microchip | DM164150 | [Microchip](https://www.microchip.com) | [Datasheet](https://ww1.microchip.com) | U2 |
@@ -39,6 +41,7 @@ Sensor VDD 0.1 µF, 50V Bypass Cap | 1 | $0.15 | $0.15 | KEMET | K104K15X7RF53L2
 4.7 kΩ, 1/4W Axial Resistors (I²C Pull-Up) | 2 | $0.10 | $0.20 | Yageo | CFR-25JB-52-4K7 | [DigiKey](https://www.digikey.com) | [Datasheet]([suspicious link removed]) | R5, R6
 
 **3. Communication, Expansion & User Interface**
+
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
 8-Pin (2x4) Shrouded Ribbon Header | 1 | $1.10 | $1.10 | Molex | 0702460801 | [DigiKey](https://www.digikey.com/en/products/detail/molex/0702460801/760165) | [Datasheet](https://www.molex.com) | J2 | 
@@ -51,6 +54,7 @@ Red 3mm Through-Hole Debug LED | 1 | $0.20 | $0.20 | Lumex | SSL-LX3044GD | [Dig
 0.1 µF, 50V Debounce Capacitors | 2 | $0.15 | $0.30 | KEMET | K104K15X7RF53L2 | [DigiKey](https://www.digikey.com) | [Datasheet]([suspicious link removed]) | C6, C7
 
 **4. Test Points, Debugging Hardware & Prototyping**
+
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
 PCB Miniature Test Point Loop Terminals | 6 | $0.28 | $1.68 | Keystone Electronics | 5000 | [DigiKey](https://www.digikey.com) | [Datasheet]([suspicious link removed]) | TP1, TP2, TP3, TP4, TP5, TP6 |
