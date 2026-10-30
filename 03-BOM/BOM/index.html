@@ -609,14 +609,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+    <nav class="md-nav" aria-label="Bill of Materials Example (as Table)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#total-subsystem-hardware-cost-2543" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Total Subsystem Hardware Cost: $25.43
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -824,14 +830,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+    <nav class="md-nav" aria-label="Bill of Materials Example (as Table)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#total-subsystem-hardware-cost-2543" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Total Subsystem Hardware Cost: $25.43
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -912,13 +924,33 @@
 0.33 µF, 50V Ceramic Input Filter Cap | 1 | $0.25 | $0.25 | TDK Corporation | FG28C0G1H334JNT06 | <a href="https://www.digikey.com">DigiKey</a> | <a href="https://www.digikey.com">Datasheet</a> | C1 |
 0.1 µF, 50V Ceramic Output Filter Cap | 1 | $0.15 | $0.15 | KEMET | K104K15X7RF53L2 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | C2 |
 12V DC 700mA AC/DC Wall Adapter | 1 | $7.58 | $7.58 | Triad Magnetics | WSU120-0700 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | External (J1) </p>
-<ul>
-<li>You could also import your BOM via a screenshot of the spreadsheet created BOM</li>
-</ul>
-<h2 id="bill-of-materials-example-as-image">Bill of Materials Example (as Image)</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BOM-Screenshot.png" data-desc-position="bottom"><img _2000_="&quot;2000&quot;" alt="" src="../BOM-Screenshot.png" style="style" width:="width:"></a>
-<strong>Figure 2:</strong> Example Bill of Materials as a screenshot.</p>
-<p>As you can see, the text can be difficult to read without opening the image.</p>
+<p><strong>2. Microcontroller Core &amp; Environmental Sensing</strong> 
+| <strong>Part Name/Description</strong> | <strong>Qty</strong> | <strong>Unit Cost</strong> | <strong>Total Cost</strong> | <strong>Manufacture</strong> | <strong>Manufacturer #</strong> | <strong>Vendor Link</strong> |<strong>Datasheet Link</strong> | <strong>Schematic Reference Designators</strong> |
+|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----| 
+PIC18F57Q43 Curiosity Nano Board | 1 | $0.00 | $0.00 | Microchip | DM164150 | <a href="https://www.microchip.com">Microchip</a> | <a href="https://ww1.microchip.com">Datasheet</a> | U2 |
+1x14 Female Pin Headers (0.1" Pitch) | 2 | $0.65 | $1.30 | Sullins Connector | PPPC141LFBN-RC | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | Socket for U2 |
+MCU Target 0.1 µF, 50V Bypass Caps | 2 | $0.15 | $0.30 | KEMET | K104K15X7RF53L2 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | C3, C4 |
+DHT20 Temp &amp; Humidity Sensor (I²C) | 1 | $4.50 | $4.50 | Adafruit / Aosong | 5183 / DHT20 | <a href="[suspicious link removed]">Adafruit</a> | <a href="https://cdn-shop.adafruit.com/product-files/5183/5193_DHT20.pdf">Datasheet</a> | U5 |
+1x4 Female Socket Header (0.1" Pitch) | 1 | $0.25 | $0.25 | Sullins Connector | PPPC041LFBN-RC | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | Socket for U5 |
+Sensor VDD 0.1 µF, 50V Bypass Cap | 1 | $0.15 | $0.15 | KEMET | K104K15X7RF53L2 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | C5 |
+4.7 kΩ, 1/4W Axial Resistors (I²C Pull-Up) | 2 | $0.10 | $0.20 | Yageo | CFR-25JB-52-4K7 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | R5, R6</p>
+<p><strong>3. Communication, Expansion &amp; User Interface</strong>
+| <strong>Part Name/Description</strong> | <strong>Qty</strong> | <strong>Unit Cost</strong> | <strong>Total Cost</strong> | <strong>Manufacture</strong> | <strong>Manufacturer #</strong> | <strong>Vendor Link</strong> |<strong>Datasheet Link</strong> | <strong>Schematic Reference Designators</strong> |
+|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
+8-Pin (2x4) Shrouded Ribbon Header | 1 | $1.10 | $1.10 | Molex | 0702460801 | <a href="https://www.digikey.com/en/products/detail/molex/0702460801/760165">DigiKey</a> | <a href="https://www.molex.com">Datasheet</a> | J2 | 
+8-Conductor Flat Ribbon Cable Assembly | 1 | $2.10 | $2.10 | Molex | 0151660081 | <a href="https://www.digikey.com">DigiKey</a> | <a href="https://www.molex.com">Datasheet</a> | Cable for J2 |
+1x6 Male Expansion Header (0.1") | 1 | $0.30 | $0.30 | Amphenol FCI | 68000-106HLF | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | J3 |
+Red 3mm Through-Hole Debug LED | 1 | $0.20 | $0.20 | Lumex | SSL-LX3044GD | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | D1 |
+300 Ω, 1/4W Resistor (LED Current Limit) | 1 | $0.10 | $0.10 | Yageo | CFR-25JB-52-300R | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | R4 |
+6mm x 6mm Tactile Pushbuttons | 2 | $0.35 | $0.70 | C&amp;K | PTS645SM43SMTR92 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | SW1, SW2 |
+10 kΩ, 1/4W Pull-Up Resistors | 2 | $0.10 | $0.20 | Yageo | CFR-25JB-52-10K | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | R2, R3 |
+0.1 µF, 50V Debounce Capacitors | 2 | $0.15 | $0.30 | KEMET | K104K15X7RF53L2 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | C6, C7</p>
+<p><strong>4. Test Points, Debugging Hardware &amp; Prototyping</strong>
+| <strong>Part Name/Description</strong> | <strong>Qty</strong> | <strong>Unit Cost</strong> | <strong>Total Cost</strong> | <strong>Manufacture</strong> | <strong>Manufacturer #</strong> | <strong>Vendor Link</strong> |<strong>Datasheet Link</strong> | <strong>Schematic Reference Designators</strong> |
+|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
+PCB Miniature Test Point Loop Terminals | 6 | $0.28 | $1.68 | Keystone Electronics | 5000 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | TP1, TP2, TP3, TP4, TP5, TP6 |
+2-Pin 0.1" Shorting Jumpers/Shunts | 2 | $0.12 | $0.24 | TE Connectivity | 382811-6 | <a href="https://www.digikey.com">DigiKey</a> | <a href="[suspicious link removed]">Datasheet</a> | Debug Shunts |</p>
+<h3 id="total-subsystem-hardware-cost-2543">Total Subsystem Hardware Cost: <strong>$25.43</strong></h3>
 
 
 
