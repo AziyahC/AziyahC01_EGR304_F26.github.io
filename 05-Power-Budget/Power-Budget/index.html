@@ -866,10 +866,24 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pwr2.png" data-desc-position="bottom"><img alt="budget2" src="../pwr2.png"></a></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pwr3.png" data-desc-position="bottom"><img alt="budget3" src="../pwr3.png"></a></p>
 <h2 id="conclusions">Conclusions</h2>
-<p>From the prepared Power Budget, several key engineering conclusions can be drawn regarding the stability and reliability of the subsystem design:
-1. <strong>Sufficient Power Supply Capacity:</strong> The total worst-case operating current required on the +5V regulated rail is 113.1 mA. The L7805ABV-DG regulator easily supplies this demand with 1358.6 mA of remaining current headroom, ensuring stable operations without voltage droop.
-2. <strong>External Power Supply Margin:</strong> The external 12V 700mA wall adapter provides a total current draw of only 119.1 mA under a full load. This leaves 580.9 mA of unused capacity, allowing significant power margin to feed inter-board power lines or auxiliary devices if needed.
-3. Dropout Voltage Compliance: The +12V DC input rail provides a 7.0V margin above the +5.0V output, far exceeding the L7805's 2.0V dropout threshold. This guarantees proper regulation even if input wall adapter voltage sags slightly under AC line fluctuations.</p>
+<p>From the prepared Power Budget, several key engineering conclusions can be drawn regarding the stability and reliability of the subsystem design:</p>
+<ul>
+<li>
+<ol>
+<li><strong>Sufficient Power Supply Capacity:</strong> The total worst-case operating current required on the +5V regulated rail is 113.1 mA. The L7805ABV-DG regulator easily supplies this demand with 1358.6 mA of remaining current headroom, ensuring stable operations without voltage droop.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li><strong>External Power Supply Margin:</strong> The external 12V 700mA wall adapter provides a total current draw of only 119.1 mA under a full load. This leaves 580.9 mA of unused capacity, allowing significant power margin to feed inter-board power lines or auxiliary devices if needed.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Dropout Voltage Compliance: The +12V DC input rail provides a 7.0V margin above the +5.0V output, far exceeding the L7805's 2.0V dropout threshold. This guarantees proper regulation even if input wall adapter voltage sags slightly under AC line fluctuations.</li>
+</ol>
+</li>
+</ul>
 <h2 id="resouces">Resouces</h2>
 <p>The power budget as a PDF download is available <a href="../PowerBudgetExample.pdf"><em>here</em></a>, and a Microsoft Excel Sheet <a href="../PowerBudgetExample.xlsx"><em>here</em></a>.</p>
 
