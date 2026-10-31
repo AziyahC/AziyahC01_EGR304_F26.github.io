@@ -24,7 +24,7 @@
 
     
       
-        <title>Welcome - EGR 304 Aziyah Castellanoz Data Sheet</title>
+        <title>EGR 304 Aziyah Castellanoz Data Sheet</title>
       
     
     
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome
+              Home
             
           </span>
         </div>
@@ -205,7 +205,7 @@
   
     
   
-  Welcome
+  Home
 
       </a>
     </li>
@@ -400,7 +400,7 @@
           
   
   <span class="md-ellipsis">
-    Welcome
+    Home
   </span>
   
 
@@ -411,7 +411,7 @@
         
   
   <span class="md-ellipsis">
-    Welcome
+    Home
   </span>
   
 
@@ -460,6 +460,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-introduction-member-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Introduction &amp; Member Roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasheet-navigation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datasheet Navigation Guide
+    </span>
+  </a>
   
 </li>
       
@@ -814,6 +832,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#team-introduction-member-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Introduction &amp; Member Roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasheet-navigation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datasheet Navigation Guide
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -837,7 +873,7 @@
   
 
 
-  <h1>Welcome</h1>
+  <h1>Home</h1>
 
 <p></p><center>
 <font size="6">Aziyah Castellanoz Datasheet</font><br>
@@ -855,16 +891,38 @@ for<br>
 <p>As my individual engineering contribution to Team 207, I designed and implemented the Temperature &amp; Humidity Sensing Subsystem. This module acts as the environmental intelligence unit for the Dorm Hub, continuously sampling ambient room temperature (–40°C to 80°C) and relative humidity (0–100% RH) via an Adafruit DHT20 digital sensor over an I²C serial bus.</p>
 <p>The onboard Microchip PIC18F57Q43 Curiosity Nano microcontroller processes the digital sensor readings and communicates with the rest of the team's modules over a standardized 8-pin shrouded ribbon cable interface. This allows my teammates' display and control subsystems to dynamically adjust room settings, display live weather/room metrics, and trigger environmental alerts.</p>
 <p>To examine how this subsystem integrates into Team 207's overall hub-and-spoke hardware architecture, software state machine, and complete product requirements, please visit the main <a href="https://asu-egr304-2026-f-207.github.io/TEAM207_EGR304-FALL_2026/">Team 207 Project Report</a></p>
+<h2 id="team-introduction-member-roles">Team Introduction &amp; Member Roles</h2>
+<p><strong>Team 207</strong> utilizes a hub-and-spoke architecture where specialized sensor boards transmit serial data to a central main processing board:
+* <strong>Aziyah Castellanoz (My Role) — Environmental Sensing &amp; Hardware Engineer:</strong> Designed and built the Temperature &amp; Humidity Sensing Subsystem. Responsible for the DHT20 I²C digital sensor interface, 12V DC input to regulated +5V DC power supply, schematic capture, and transmitting serial temperature and humidity data over the 8-pin ribbon cable connector (J2) to the main board.</p>
 <ul>
 <li>
-<p><a href="02-Component-Selection/Component-Selection/">Component Selection</a></p>
+<p><strong>Dahryl Williams — Ambient Light Sensing Engineer:</strong> Designed and built the Light Sensing Subsystem. Responsible for sampling ambient room light levels using a photo resistor circuit and sending the digitized light data serially to the central main board.</p>
 </li>
 <li>
-<p>This needs to be updated to reflect a team introduction</p>
+<p><strong>Chris Plumley — Central Hub &amp; Actuator System Engineer:</strong> Designed and built the Main Control &amp; Actuator Board. Serves as the central hub that receives serial data from both my temperature/humidity sensor board and Dahryl's light sensor board. Because a traditional display screen was not compatible with our PIC Curiosity Nano setup, Chris's board uses this incoming sensor data to execute direct physical actions:</p>
 </li>
-<li>Content should also help an unfamiliar reader navigate to areas of interest. Information like:</li>
+<li><strong>Temperature Actuation:</strong> Automatically turns a cooling fan on or off depending on how hot or cold the room is based on readings from my DHT20 subsystem.</li>
+<li><strong>Lighting Actuation:</strong> Dynamically adjusts the color array and brightness level of an ambient LED system based on light readings from Dahryl's photo resistor subsystem.</li>
 </ul>
-<p>To review the details listed of the material used to construct the subsection, you can review it in the <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/">"BOM"</a> section of the datasheet.</p>
+<h2 id="datasheet-navigation-guide">Datasheet Navigation Guide</h2>
+<p>For visitors and reviewers navigating this datasheet, the documentation is organized into five specialized sections detailing each phase of the engineering design process:</p>
+<ul>
+<li>
+<p><a href="01-Block-Diagram/Block-Diagram/">01 Block Diagram</a>: Shows the overall system layout, sensor connections, and how signal lines connect to the main board via the ribbon connector.</p>
+</li>
+<li>
+<p><a href="02-Component-Selection/Component-Selection/">02 Component Selection</a>: Review the engineering trade-off analysis, pros/cons, and rationale used to select major components, including the DHT20 sensor, L7805ABV-DG linear voltage regulator, and WSU120-0700 wall adapter.</p>
+</li>
+<li>
+<p><a href="03-BOM/BOM/">03 Bill of Materials</a>: Lists all physical components, costs, part numbers, vendor links, and schematic reference labels.</p>
+</li>
+<li>
+<p><a href="04-Schematic/schematic/">04 Schematic</a>: Inspect the full KiCad ECAD circuit schematic, functional sub-block breakdowns (Power Regulation, MCU Core, Sensing, Communication, UI, and Test Points).</p>
+</li>
+<li>
+<p><a href="05-Power-Budget/Power-Budget/">05 Power Budget</a>: Breaks down power consumption, current draw across operating modes, and power supply efficiency.</p>
+</li>
+</ul>
 <p>For all the sections</p>
 
 
@@ -872,9 +930,6 @@ for<br>
 
 
 
-
-  
-  
 
 
 
