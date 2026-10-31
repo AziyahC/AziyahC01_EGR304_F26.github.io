@@ -848,22 +848,20 @@ for<br>
 <p><strong>Submission: October , 30, 2026</strong>
 </p></center><p></p>
 <h2 id="introduction">Introduction</h2>
-<ul>
-<li>This needs to be updated so that a reader gets an idea of the purpose of this datasheet.</li>
-</ul>
+<p>Welcome to the technical data sheet for the Temperature &amp; Humidity Sensing Subsystem. The purpose of this datasheet is to serve as a comprehensive, standalone engineering documentation hub for the electrical design, component selection, schematic capture, power analysis, and hardware specification of this embedded subsystem. Designed as part of ASU's EGR 304 course, this data sheet provides all necessary technical details, schematic diagrams, and bill-of-materials data required to build, interface, and verify the physical hardware.</p>
 <h3 id="project-summary">Project Summary</h3>
+<p>The Dorm Hub project is a compact, multi-functional desktop environmental monitor and smart ambient light sensing tailored specifically for university students living in ASU dormitories. Dorm rooms present unique challenges—limited living space, fluctuating room climates, and busy student schedules. The Dorm Hub solves these issues by consolidating ambient lighting, sleep/wake routines, and real-time climate monitoring into a single space-saving desktop device.</p>
+<h3 id="my-contribution">My Contribution</h3>
+<p>As my individual engineering contribution to Team 207, I designed and implemented the Temperature &amp; Humidity Sensing Subsystem. This module acts as the environmental intelligence unit for the Dorm Hub, continuously sampling ambient room temperature (–40°C to 80°C) and relative humidity (0–100% RH) via an Adafruit DHT20 digital sensor over an I²C serial bus.</p>
+<p>The onboard Microchip PIC18F57Q43 Curiosity Nano microcontroller processes the digital sensor readings and communicates with the rest of the team's modules over a standardized 8-pin shrouded ribbon cable interface. This allows my teammates' display and control subsystems to dynamically adjust room settings, display live weather/room metrics, and trigger environmental alerts.</p>
+<p>To examine how this subsystem integrates into Team 207's overall hub-and-spoke hardware architecture, software state machine, and complete product requirements, please visit the main <a href="https://asu-egr304-2026-f-207.github.io/TEAM207_EGR304-FALL_2026/">Team 207 Project Report</a></p>
 <ul>
-<li>This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.</li>
-<li>
-<p>Add context that ties into the link to your <a href="https://asu-egr304-2026-f-207.github.io/TEAM207_EGR304-FALL_2026/">team report.</a></p>
-</li>
 <li>
 <p><a href="02-Component-Selection/Component-Selection/">Component Selection</a></p>
 </li>
-</ul>
-<h3 id="my-contribution">My Contribution</h3>
-<ul>
-<li>This needs to be updated to reflect a team introduction</li>
+<li>
+<p>This needs to be updated to reflect a team introduction</p>
+</li>
 <li>Content should also help an unfamiliar reader navigate to areas of interest. Information like:</li>
 </ul>
 <p>To review the details listed of the material used to construct the subsection, you can review it in the <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/">"BOM"</a> section of the datasheet.</p>
