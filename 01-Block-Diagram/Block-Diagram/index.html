@@ -26,7 +26,7 @@
 
     
       
-        <title>Individal Block Diagram - EGR 304 Aziyah Castellanoz Data Sheet</title>
+        <title>Block Diagram - EGR 304 Aziyah Castellanoz Data Sheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#block-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Individal Block Diagram
+              Block Diagram
             
           </span>
         </div>
@@ -471,7 +471,7 @@
           
   
   <span class="md-ellipsis">
-    Individal Block Diagram
+    Block Diagram
   </span>
   
 
@@ -482,7 +482,7 @@
         
   
   <span class="md-ellipsis">
-    Individal Block Diagram
+    Block Diagram
   </span>
   
 
@@ -500,6 +500,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#block-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block Diagram
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
@@ -522,6 +531,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-8-earth-ground-class-stnadard-common-ground-return-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Pin 8 ('Earth' Ground): Class stnadard common ground return line
+    </span>
+  </a>
   
 </li>
       
@@ -815,6 +833,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#block-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       Overview
@@ -835,6 +862,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-8-earth-ground-class-stnadard-common-ground-return-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Pin 8 ('Earth' Ground): Class stnadard common ground return line
+    </span>
+  </a>
   
 </li>
       
@@ -870,34 +906,68 @@
   
 
 
-  <h1>Individal Block Diagram</h1>
+  <h1>Block Diagram</h1>
 
-<p>** Team 207 | Aziyah Castellanoz<strong> 
-</strong>Subsystem:** Temperature &amp; Humidity Sensing Transmission</p>
+<h2 id="block-diagram">Block Diagram</h2>
+<p><strong>Team 207 | Aziyah Castellanoz</strong> 
+<strong>Subsystem:</strong> Temperature &amp; Humidity Sensing Transmission</p>
 <h2 id="overview">Overview</h2>
 <p>The purpose of this block diagram is to define the electrical design, signal flow, power distribution, and the board interface connections for the Temperature &amp; Humidity Sensing Transmission Subsystem. </p>
 <p>This diagram documents how major integrated circuits, digital signal connection, and user interface peripherals connect to the PIC18F57Q43 Curiosity Nano microcontroller, as well as how data and digital signals pass to the main board thorough the team's 8-pin connector. </p>
 <hr>
 <h3 id="key-architectural-elements">Key Architectural Elements</h3>
-<p><strong>Power Sources and Voltage</strong>
- * <strong>External Power Input:</strong> 12V DC wall adapter entering through a PCB barrel jack which is protected by a inline fuse.
- * <strong>Regulated Logic Rail(5V DC):</strong> L7805ABV-DG 1.5A linear regulator with input(0.33uf) and output(0.1uf) filtering capacitors.
- * <strong>Ground</strong> Common system Earth Ground rail shared across all block and team interfaces.</p>
-<p><strong>Sensor Subsystem:</strong>
- * <strong>DHT20 Temperature and Humidity Sensor</strong> Communicates with PIC18F57Q43 Curiosity Nano via a two wire I2C serial protocol. 
- * <strong>Op-Amp Buffer Stage:</strong> Using the MCP6004 the DHT11 will pass through the op-amp to prevent signal degradation and input loading.</p>
-<p><strong>User Interface and Debugging Indicators:</strong>
- * <strong>Pushbuttons:</strong> Active user input switches tied to RA4 and RA3 with 10k pull up resistors.
- * <strong>Debug Status LED:</strong> General purpose visual status indicator on pin RA0 with a 300 ohm current limiting resistor.
- * <strong>Spare GPIO Expansion Header:</strong> 1x6 male header that has power, ground, and 4 unused GPIO pins for testing or probing.</p>
-<p><strong>Team Inter-Board Connections(8-pin Header):</strong>
-* <strong>Pin 1 ('DigitalSignal2'):</strong> Digital control line routed to PIC pin RA3.
-* <strong>Pin 2 ('DigitalSignal1'):</strong> Digital control line routed to PIC pin RA4.
-* <strong>Pin 3 ('UART_TX'):</strong> UART serial data output from PIC transmitting sensor data packets to main board.
-* <strong>Pin 4 ('UART_RX'):</strong> UART serial data input to PIC receiving commands from the main board. 
-* <strong>Pin 5-7 ('DigitalSignal2'):</strong> Reserved pass-through lines for team expansion
-* <strong>Pin 8 ('Earth' Ground):</strong> Class stnadard common ground return line</p>
-<hr>
+<p><strong>Power Sources and Voltage</strong></p>
+<ul>
+<li>
+<p><strong>External Power Input:</strong> 12V DC wall adapter entering through a PCB barrel jack which is protected by a inline fuse.</p>
+</li>
+<li>
+<p><strong>Regulated Logic Rail(5V DC):</strong> L7805ABV-DG 1.5A linear regulator with input(0.33uf) and output(0.1uf) filtering capacitors.</p>
+</li>
+<li>
+<p><strong>Ground</strong> Common system Earth Ground rail shared across all block and team interfaces.</p>
+</li>
+</ul>
+<p><strong>Sensor Subsystem:</strong></p>
+<ul>
+<li>
+<p><strong>DHT20 Temperature and Humidity Sensor</strong> Communicates with PIC18F57Q43 Curiosity Nano via a two wire I2C serial protocol. </p>
+</li>
+<li>
+<p><strong>Op-Amp Buffer Stage:</strong> Using the MCP6004 the DHT11 will pass through the op-amp to prevent signal degradation and input loading.</p>
+</li>
+</ul>
+<p><strong>User Interface and Debugging Indicators:</strong></p>
+<ul>
+<li>
+<p><strong>Pushbuttons:</strong> Active user input switches tied to RA4 and RA3 with 10k pull up resistors.</p>
+</li>
+<li>
+<p><strong>Debug Status LED:</strong> General purpose visual status indicator on pin RA0 with a 300 ohm current limiting resistor.</p>
+</li>
+<li>
+<p><strong>Spare GPIO Expansion Header:</strong> 1x6 male header that has power, ground, and 4 unused GPIO pins for testing or probing.</p>
+</li>
+</ul>
+<p><strong>Team Inter-Board Connections(8-pin Header):</strong></p>
+<ul>
+<li>
+<p><strong>Pin 1 ('DigitalSignal2'):</strong> Digital control line routed to PIC pin RA3.</p>
+</li>
+<li>
+<p><strong>Pin 2 ('DigitalSignal1'):</strong> Digital control line routed to PIC pin RA4.</p>
+</li>
+<li>
+<p><strong>Pin 3 ('UART_TX'):</strong> UART serial data output from PIC transmitting sensor data packets to main board.</p>
+</li>
+<li>
+<p><strong>Pin 4 ('UART_RX'):</strong> UART serial data input to PIC receiving commands from the main board. </p>
+</li>
+<li>
+<p><strong>Pin 5-7 ('DigitalSignal2'):</strong> Reserved pass-through lines for team expansion</p>
+</li>
+</ul>
+<h2 id="pin-8-earth-ground-class-stnadard-common-ground-return-line">* <strong>Pin 8 ('Earth' Ground):</strong> Class stnadard common ground return line</h2>
 <h2 id="subsystem-block-diagram">Subsystem Block Diagram</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../upblockdia.png" data-desc-position="bottom"><img alt="Individual Subsystem Block Diagram - Aziyah Castellanoz" src="../upblockdia.png"></a></p>
 
@@ -906,9 +976,6 @@
 
 
 
-
-  
-  
 
 
 
