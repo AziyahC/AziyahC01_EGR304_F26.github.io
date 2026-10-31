@@ -1,9 +1,3 @@
----
-title: Welcome
-tags:
-- tag1
-- tag2
----
 <center>
 <font size= "6">Aziyah Castellanoz Datasheet</font><br>
 as part of <br>
@@ -30,15 +24,28 @@ The onboard Microchip PIC18F57Q43 Curiosity Nano microcontroller processes the d
 
 To examine how this subsystem integrates into Team 207's overall hub-and-spoke hardware architecture, software state machine, and complete product requirements, please visit the main [Team 207 Project Report](https://asu-egr304-2026-f-207.github.io/TEAM207_EGR304-FALL_2026/)
 
-* [Component Selection](02-Component-Selection/Component-Selection.md)
+## Team Introduction & Member Roles
 
+**Team 207** utilizes a hub-and-spoke architecture where specialized sensor boards transmit serial data to a central main processing board:
+* **Aziyah Castellanoz (My Role) — Environmental Sensing & Hardware Engineer:** Designed and built the Temperature & Humidity Sensing Subsystem. Responsible for the DHT20 I²C digital sensor interface, 12V DC input to regulated +5V DC power supply, schematic capture, and transmitting serial temperature and humidity data over the 8-pin ribbon cable connector (J2) to the main board.
 
+* **Dahryl Williams — Ambient Light Sensing Engineer:** Designed and built the Light Sensing Subsystem. Responsible for sampling ambient room light levels using a photo resistor circuit and sending the digitized light data serially to the central main board.
 
+* **Chris Plumley — Central Hub & Actuator System Engineer:** Designed and built the Main Control & Actuator Board. Serves as the central hub that receives serial data from both my temperature/humidity sensor board and Dahryl's light sensor board. Because a traditional display screen was not compatible with our PIC Curiosity Nano setup, Chris's board uses this incoming sensor data to execute direct physical actions:
+* **Temperature Actuation:** Automatically turns a cooling fan on or off depending on how hot or cold the room is based on readings from my DHT20 subsystem.
+* **Lighting Actuation:** Dynamically adjusts the color array and brightness level of an ambient LED system based on light readings from Dahryl's photo resistor subsystem.
 
+## Datasheet Navigation Guide
+For visitors and reviewers navigating this datasheet, the documentation is organized into five specialized sections detailing each phase of the engineering design process:
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+* [01 Block Diagram](01-Block-Diagram/Block-Diagram.md): Shows the overall system layout, sensor connections, and how signal lines connect to the main board via the ribbon connector.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+* [02 Component Selection](02-Component-Selection/Component-Selection.md): Review the engineering trade-off analysis, pros/cons, and rationale used to select major components, including the DHT20 sensor, L7805ABV-DG linear voltage regulator, and WSU120-0700 wall adapter.
+
+* [03 Bill of Materials](03-BOM/BOM.md): Lists all physical components, costs, part numbers, vendor links, and schematic reference labels.
+
+* [04 Schematic](04-Schematic/schematic.md): Inspect the full KiCad ECAD circuit schematic, functional sub-block breakdowns (Power Regulation, MCU Core, Sensing, Communication, UI, and Test Points).
+
+* [05 Power Budget](05-Power-Budget/Power-Budget.md): Breaks down power consumption, current draw across operating modes, and power supply efficiency.
 
 For all the sections
