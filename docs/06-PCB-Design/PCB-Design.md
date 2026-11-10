@@ -11,7 +11,7 @@ This page documents the physical PCB layout for the Temperature & Humidity Sensi
 ### Back Copper Layer (B.Cu)
 ![PCB Back Layout](pcbback.png)
 
-## Downloads &a Manufacturing Deliverables
+## Downloads & Manufacturing Deliverables
 
 **[Download PCB Layout PDF](pcblay.pdf)**
 **[Download Complete ECAD Project ZIP](AC_Subsystem.zip)**
